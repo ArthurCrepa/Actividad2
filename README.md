@@ -17,5 +17,6 @@ Explicaciones
 
 
 *Primer Caso:* 
+Se asignan colores aleatorios a la víbora y a la comida cada vez que se ejecuta el juego, utilizando los valores generados por random.randint(0, 4), que eligen entre cinco colores diferentes (negro, morado, verde, azul y amarillo). Si el color asignado a la víbora es el mismo que el de la comida, se ajusta el color de la víbora incrementando o disminuyendo su valor para asegurar que ambos sean diferentes. Estos números aleatorios se convierten en nombres de colores mediante un diccionario. Así, se garantiza que la víbora y la comida siempre tengan colores distintos al comenzar el juego, excluyendo el rojo de las opciones disponibles
 
 *Segundo Caso:* Importamos la librería "random" con la finalidad de poder asignar diferentes valores tanto al color de la serpiente (colorSnake) como al color de la comida (colorFood). Estos se les asignarán un valor de 0 a 4 (0: Negro, 1: Morado, 2:Azul, 3:Verde, 4: Amarillo), si ambos llegaran a coincidir en su valor numérico el programa se asegura que el color de la serpiente siempre será diferente. 
