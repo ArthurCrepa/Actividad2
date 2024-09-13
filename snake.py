@@ -6,6 +6,15 @@ food = vector(0, 0)
 snake = [vector(10, 0)]
 aim = vector(0, -10)
 
+colorSnake=random.randint(0,4)
+colorFood=random.randint(0,4)
+
+if(colorSnake==colorFood):   
+    if(colorSnake==4):
+        colorSnake-=1
+    else:
+        colorSnake+=1
+
 def change(x, y):
     "Change snake direction."
     aim.x = x
