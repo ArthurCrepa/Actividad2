@@ -9,26 +9,15 @@ aim = vector(0, -10)
 colorSnake=random.randint(0,4)
 colorFood=random.randint(0,4)
 
-if(colorSnake==colorFood):   
-    if(colorSnake==4):
-        colorSnake-=1
-    else:
-        colorSnake+=1
-if(colorSnake==0):
-    colorSnake="black"
-    
-if(colorSnake==1):
-    colorSnake="purple"
-    
-if(colorSnake==2):
-    colorSnake="green"
-
-if(colorSnake==3):
-    colorSnake="blue"
-
-if(colorSnake==4):
-    colorSnake="yellow"
-
+colors={
+    0:"black",
+    1:"purple",
+    2:"green",
+    3:"blue",
+    4:"yellow",  
+}      
+colorSnake = colors[colorSnake]
+colorFood = colors[colorFood]
 
 def change(x, y):
     "Change snake direction."
