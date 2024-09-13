@@ -14,6 +14,21 @@ if(colorSnake==colorFood):
         colorSnake-=1
     else:
         colorSnake+=1
+if(colorSnake==0):
+    colorSnake="black"
+    
+if(colorSnake==1):
+    colorSnake="purple"
+    
+if(colorSnake==2):
+    colorSnake="green"
+
+if(colorSnake==3):
+    colorSnake="blue"
+
+if(colorSnake==4):
+    colorSnake="yellow"
+
 
 def change(x, y):
     "Change snake direction."
@@ -46,9 +61,9 @@ def move():
     clear()
 
     for body in snake:
-        square(body.x, body.y, 9, 'black')
+        square(body.x, body.y, 9, colorSnake)
 
-    square(food.x, food.y, 9, 'green')
+    square(food.x, food.y, 9, colorFood)
     update()
     ontimer(move, 100)
 
