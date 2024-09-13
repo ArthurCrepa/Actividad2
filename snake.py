@@ -10,6 +10,15 @@ aim = vector(0, -10)
 colorSnake=random.randint(0,4)
 colorFood=random.randint(0,4)
 
+colorSnake=random.randint(0,4)
+colorFood=random.randint(0,4)
+
+if(colorSnake==colorFood):   
+    if(colorSnake==4):
+        colorSnake-=1
+    else:
+        colorSnake+=1
+
 colors={
     0:"black",
     1:"purple",
